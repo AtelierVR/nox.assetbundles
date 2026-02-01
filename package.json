@@ -1,0 +1,6 @@
+{
+  "name": "nox.assetbundles",
+  "displayName": "Nox - Asset Bundles",
+  "description": "A Unity package for managing and loading asset bundles efficiently.",
+  "version": "1.0.0"
+}

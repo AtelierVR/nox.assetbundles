@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<linker>
+	<assembly fullname="Nox.AssetBundles" preserve="all" />
+	<assembly fullname="Nox.AssetBundles.Runtime" preserve="all" />
+	<assembly fullname="Nox.CCK.AssetBundles" preserve="all" />
+	<assembly fullname="Nox.Mods.AssetBundles" preserve="all" />
+</linker>
