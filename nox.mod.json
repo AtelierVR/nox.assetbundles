@@ -23,7 +23,6 @@
       "website": "https://hactazia.fr/"
     }
   ],
-  "dependencies": [],
   "contraints": [
     {
       "type": "first"
