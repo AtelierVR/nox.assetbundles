@@ -99,7 +99,9 @@ namespace Nox.CCK.AssetBundles {
 				return;
 
 			Assets.Remove(asset);
-			asset.AssetBundle.Unload(true);
+
+			if (asset.AssetBundle)
+				asset.AssetBundle.Unload(true);
 		}
 
 		public IAsset AttachFile(AssetBundle ab, string path, string by) {
@@ -120,7 +122,8 @@ namespace Nox.CCK.AssetBundles {
 
 		public void Dispose() {
 			foreach (var asset in Assets)
-				asset.AssetBundle.Unload(true);
+				if (asset?.AssetBundle)
+					asset.AssetBundle.Unload(true);
 			Assets.Clear();
 		}
 	}
