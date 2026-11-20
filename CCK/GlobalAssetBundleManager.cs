@@ -17,5 +17,14 @@ namespace Nox.CCK.AssetBundles {
 
 		public static IAsset AttachFile(AssetBundle ab, string path, string by)
 			=> manager.AttachFile(ab, path, by);
+
+		/// <summary>
+		/// Unloads and forgets every bundle the current manager kept loaded (a player build unloads them
+		/// underneath us: reusing one afterwards kills the editor).
+		/// </summary>
+		public static void Reset() {
+			if (manager is AssetManager concrete)
+				concrete.UnloadAll();
+		}
 	}
 }
